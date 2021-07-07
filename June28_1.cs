@@ -35,6 +35,8 @@ class HelloWorld {
         
     }
     
+    // Printing the sum of all the elements
+    
   Console.WriteLine("The sum of all elements is: "+sum);
   
   }
