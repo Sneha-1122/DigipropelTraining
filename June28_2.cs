@@ -58,3 +58,4 @@ Enter elements in the array:
 
 OUTPUT:
 Total number of duplicate elements found in array: 2
+*/
