@@ -9,7 +9,10 @@ Code, Compile, Run and Debug online from anywhere in world.
 using System;
 class HelloWorld {
   static void Main() {
+    // Program to multiply three numbers
     Console.WriteLine("Hello World");
+   
+    // Declaring variables
     int num1, num2, num3,result;
     Console.Write("Enter your first number: ");
     num1 = Convert.ToInt32(Console.ReadLine());
@@ -21,3 +24,13 @@ class HelloWorld {
     Console.WriteLine("Your result is: "+ result);
   }
 }
+
+/* 
+INPUT:
+Enter your first number: 3
+Enter your second number: 6
+Enter your third number: 8
+
+OUTPUT:
+Your result is: 144
+*/
