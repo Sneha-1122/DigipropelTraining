@@ -1,34 +1,41 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 using System;
-class HelloWorld {
-  static void Main() {
-
-    int num1, num2, num3, num4, result;
+using System.IO;
+public class Exercise9
+{
+  public static void Main()
+  {
+    // Program to calculate the average of 4 numbers
+    Console.WriteLine("Program to calculate the average of 4 numbers");
+     int a,b,c,d, result;
+      
+     Console.Write("\n Enter the First number: ");
+     a = Convert.ToInt32(Console.ReadLine());
+ 
+     Console.Write("\n Enter the Second number: ");
+     b = Convert.ToInt32(Console.ReadLine());
+ 
+     Console.Write("\n Enter the third number: ");
+     c = Convert.ToInt32(Console.ReadLine());
+ 
+     Console.Write("\n Enter the fourth number: ");
+     d = Convert.ToInt32(Console.ReadLine());
     
-    Console.WriteLine("Please enter your input: ");
-    string[] tokens = Console.ReadLine().Split();
-
-    //Parse element 0
-    
-    int a = int.Parse(tokens[0]);
-    
-    //Parse element 1
-    
-    int b = int.Parse(tokens[1]);
-    
-    int c = int.Parse(tokens[2]);
-    
-    int d = int.Parse(tokens[3]);
-    
-    result = (a+b+c+d)/4;
-    
-    Console.WriteLine("The average of the given input is: "+result);
-  }
+    // Calculating average
+     result = (a + b + c + d) / 4;
+     Console.WriteLine("The average of {0}, {1}, {2}, {3} is: {4} ",a, b, c, d, result);
+   }
 }
+
+/*
+INPUT:
+Enter the First number: 4
+
+Enter the Second number: 7
+
+Enter the third number: 2
+
+Enter the fourth number: 9
+
+OUTPUT:
+The average of 4, 7, 2, 9 is: 5 
+*/
