@@ -4,6 +4,7 @@ public class Photobook
 {
  	protected int numPages;
 	
+	// Creating methods
 	public int GetNumberPages() {
 		return numPages;
 	}
@@ -15,6 +16,7 @@ public class Photobook
 	}
 }
 
+// Inheriting from class Photobook
 public class BigPhotobook : Photobook {
 	
 	public BigPhotobook(){
@@ -23,6 +25,7 @@ public class BigPhotobook : Photobook {
 		
 }
 
+// A class to test the logic of the other classes
 public class PhotoBookTest {
 	public static void Main() {
 		
