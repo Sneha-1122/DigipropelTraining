@@ -1,32 +1,37 @@
-/******************************************************************************
+using System;  
+public class Asterisk {  
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+    // Program to display alphabet pattern like B with an asterisk
+    public static void Main(){
 
-*******************************************************************************/
-using System;
-class HelloWorld
-{
-    static void Main()
-    {
-        Console.WriteLine("Hello World");
-        Console.WriteLine("Program to accept two name and sort in alphabetical order");
-        List<string> names = new List<string>();
-        string name1, name2;
-        name1 = Console.ReadLine();
-        Console.WriteLine("First name: " + name1);
-        name2 = Console.ReadLine();
-        Console.WriteLine("Second name: " + name2);
-        names.Add(name1);
-        names.Add(name2);
-        names.Sort();
-
-        Console.WriteLine("After sorting: ");
-        foreach (char str in names)
+    // Declaring required variables
+    int row,column; 
+ 
+    for(row=0;row<=6;row++)
         {
-            Console.WriteLine(str);
+            for (column=0; column<=6; column++)
+            {
+            if (column == 1 || ((row == 0 || row == 3 || row == 6) && (column < 5 && column > 1)) || (column == 5 && (row != 0 && row != 3 && row != 6)))
+                Console.Write("*");
+                else
+                Console.Write(" ");
+            }
+            Console.Write("\n");
         }
+    Console.Write("\n");
     }
 }
+
+/*
+OUTPUT:
+
+ ****
+ *   *
+ *   *
+ ****
+ *   *
+ *   *
+ ****
+
+
+ */
