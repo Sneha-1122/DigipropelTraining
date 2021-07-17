@@ -1,25 +1,35 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 using System;
-class HelloWorld {
-    //enum Level{High,Medium,Low}
+class StringLength {
+    
     static void Main() {
-    Console.WriteLine("Hello World");
+
+    // Program to find the length of a string without using library function
+    Console.WriteLine("\nProgram to find the length of a string without using library function\n");
+
     Console.WriteLine("Enter your string input: ");
     string word = Console.ReadLine();
     int length = 0;
-    foreach (char c in word){
+
+    // Using foreach loop to traverse through every letter in the word
+    foreach (char c in word) {
+
         length+=1;
+
     }
     
-    Console.WriteLine("Length of the given string is: "+length);
+    Console.WriteLine("\nLength of the given string is: "+length);
 
-    
   }
 }
+
+/*
+INPUT:
+Program to find the length of a string without using library function
+
+Enter your string input: 
+Digipropel India Private Limited
+
+OUTPUT:
+Length of the given string is: 32
+*/
+
