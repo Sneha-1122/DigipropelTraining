@@ -1,34 +1,36 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 using System;
-class HelloWorld {
-    //enum Level{High,Medium,Low}
+class StringCount {
+
+    // Program to count the number of words in the given input
     static void Main() {
-    Console.WriteLine("Hello World");
-    Console.WriteLine("Enter your string input: ");
+    Console.WriteLine("Program to count the number of words in the given input");
+    Console.WriteLine("\nEnter your string input: ");
     string str = Console.ReadLine();
-    int l = 0, count = 1;
+    int i = 0;
+    int words = 1;
 
-    while (l < str.Length-1){
-        if (str[l] == ' '||str[l] == '\n'||str[l] == '\t'){
-            count++;
-        }
-        l++;
-    }
-    Console.WriteLine("Count of words in the given input: "+count);
-        string Capitalized;
-        for (l=0; l<str.Length; l++)
+    while (i <= str.Length - 1)
+    {
+        // To check whether the current character is white space or new line or a tab
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
         {
-            Capitalized = str[l].ToUpper();
+            words++;
         }
-        Console.WriteLine("Capitalized string is as follows: " + Capitalized);
-    
-  }
 
+        i++;
+    }
+
+    Console.Write("Total number of words in the string is : {0}\n", words);
+	}
 }
+
+/*
+INPUT:
+Program to count the number of words in the given input
+
+Enter your string input:
+Digipropel India Private Limited
+
+OUTPUT:
+Total number of words in the string is : 4
+*/
