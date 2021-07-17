@@ -1,24 +1,23 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 using System;
-class HelloWorld {
+class StringSort {
   static void Main() {
-    Console.WriteLine("Hello World");
-    Console.WriteLine("Program to accept two name and sort in alphabetical order");
+    
+    // Program to accept two names and sort in alphabetical order
+    Console.WriteLine("Program to accept two names and sort in alphabetical order");
+
+    // Creating a list
     var names = new List<string>();
     string name1, name2;
     name1 = Console.ReadLine();
     Console.WriteLine("First name: "+name1);
     name2 = Console.ReadLine();
     Console.WriteLine("Second name: "+name2);
+
+    // Adding names to the list
     names.Add(name1);
     names.Add(name2);
+
+    // Function to sort the given input
     names.Sort();
     
     Console.WriteLine("After sorting: ");
@@ -27,3 +26,14 @@ class HelloWorld {
     }
   }
 }
+
+/*
+INPUT:
+Program to accept two names and sort in alphabetical order
+
+First name: Sneha
+Second name: Sadhana
+After sorting:
+Sadhana
+Sneha
+*/
