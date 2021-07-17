@@ -1,34 +1,37 @@
-using System;
-class StringLength {
-    
-    static void Main() {
+using System;  
+public class Asterisk {  
 
-    // Program to find the length of a string without using library function
-    Console.WriteLine("\nProgram to find the length of a string without using library function\n");
+    // Program to display alphabet pattern like B with an asterisk
+    public static void Main(){
 
-    Console.WriteLine("Enter your string input: ");
-    string word = Console.ReadLine();
-    int length = 0;
-
-    // Using foreach loop to traverse through every letter in the word
-    foreach (char c in word) {
-
-        length+=1;
-
+    // Declaring required variables
+    int row,column; 
+ 
+    for(row=0;row<=6;row++)
+        {
+            for (column=0; column<=6; column++)
+            {
+            if (column == 1 || ((row == 0 || row == 3 || row == 6) && (column < 5 && column > 1)) || (column == 5 && (row != 0 && row != 3 && row != 6)))
+                Console.Write("*");
+                else
+                Console.Write(" ");
+            }
+            Console.Write("\n");
+        }
+    Console.Write("\n");
     }
-    
-    Console.WriteLine("\nLength of the given string is: "+length);
-
-  }
 }
 
 /*
-INPUT:
-Program to find the length of a string without using library function
-
-Enter your string input: 
-Digipropel India Private Limited
-
 OUTPUT:
-Length of the given string is: 32
-*/
+
+ ****
+ *   *
+ *   *
+ ****
+ *   *
+ *   *
+ ****
+
+
+ */
